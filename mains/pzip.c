@@ -12,7 +12,6 @@
 
 int main(int argc, char *argv[])
 {
-	
 	if (argc < 4) {
 		printf("Error: Missing number of arguments!!\n");
 		printf("\tUsage: pzip INPUT_FILE OUTPUT_FILE N_THREADS [--debug]\n");
@@ -38,7 +37,6 @@ int main(int argc, char *argv[])
 	struct zipped_char *zipped_chars;
 	int zipped_chars_count = 0;
 	int char_frequency[26] = { 0 };
-
 
 	/* open & mmap() input file and find the number of characters */
 	int input_fd = open(input_file, O_RDONLY);
